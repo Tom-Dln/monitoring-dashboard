@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tableau de Bord de Veille - Tom Delaunay</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!--
+    =========================================================
+    * ArchitectUI HTML Theme Dashboard - v1.0.0
+    =========================================================
+    * Product Page: https://dashboardpack.com
+    * Copyright 2019 DashboardPack (https://dashboardpack.com)
+    * Licensed under MIT (https://github.com/DashboardPack/architectui-html-theme-free/blob/master/LICENSE)
+    =========================================================
+    * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    -->
+    <link href="./main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
+                            data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button"
+                        class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div class="app-header__content">
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/Tom.jpg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                        Tom Delaunay
+                                    </div>
+                                    <div class="widget-subheading">
+                                        M1 DFS | MDS Caen
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
+                                data-class="closed-sidebar">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button"
+                            class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading">Chiffres Clés</li>
+                            <li>
+                                <a href="#total-movies">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>
+                                    Total de Films
+                                </a>
+                                <a href="#last-movie">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>
+                                    Dernier Film
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">Statistiques Aujourd'hui</li>
+                            <li>
+                                <a href="#list-populars">
+                                    <i class="metismenu-icon pe-7s-graph3"></i>
+                                    Liste - Populaires
+                                </a>
+                                <a href="#graph-populars">
+                                    <i class="metismenu-icon pe-7s-graph3"></i>
+                                    Graphique - Populaires
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">Actualités</li>
+                            <li>
+                                <a href="#rss-allocine">
+                                    <i class="metismenu-icon pe-7s-news-paper"></i>
+                                    Allociné
+                                </a>
+                                <a href="#rss-filmactu">
+                                    <i class="metismenu-icon pe-7s-news-paper"></i>
+                                    Films Actu
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="page-title-icon">
+                                    <i class="pe-7s-film icon-gradient bg-primary">
+                                    </i>
+                                </div>
+                                <div>
+                                    Tableau de Bord de Veille | Actualités Cinématographiques
+                                    <div class="page-title-subheading">
+                                        Ce Tableau de Bord permet de suivre l'actualité cinématographique.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-title-actions">
+                                <button type="button" data-placement="bottom" class="btn-shadow btn btn-dark">
+                                    Mis à jour il y <span id="counter-passed">0</span> secondes (<span
+                                        id="counter-remain">?</span>)
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" id="total-movies">
+                            <div class="card mb-3 widget-content bg-midnight-bloom">
+                                <div class="widget-content-wrapper text-white">
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">Total de Films</div>
+                                        <div class="widget-subheading">Référencés sur TMBD</div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                        <div class="widget-numbers text-white"><span id="movie-count">?</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8" id="last-movie">
+                            <div class="card mb-3 widget-content bg-arielle-smile">
+                                <div class="widget-content-wrapper text-white">
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">Dernier Film</div>
+                                        <div class="widget-subheading">Ajouté sur TMDB</div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                        <div class="widget-numbers text-white">
+                                            "<span id="latest-movie-container">?</span>"
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" id="list-populars">
+                            <div class="main-card mb-3 card">
+                                <div class="card-header">
+                                    Films Populaires Aujourd'hui
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">#</th>
+                                                <th class="text-center">Titre<br>& Date de Sortie</th>
+                                                <th class="text-center">Score de Popularité</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="movies-table-body">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="graph-populars">
+                            <div class="main-card mb-3 card">
+                                <canvas id="myChart" width="400" height="400"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6" id="rss-allocine">
+                            <div class="main-card mb-3 card">
+                                <div class="card-header">
+                                    Actualités | Allociné
+                                </div>
+                                <div class="card p-3">
+                                    <div id="rss-feed"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="rss-filmactu">
+                            <div class="main-card mb-3 card">
+                                <div class="card-header">
+                                    Actualités | Movie Web
+                                </div>
+                                <div class="card p-3">
+                                    <div id="rssFeed"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+
+        function loadRSSFilmsActus() {
+            const proxyUrl = 'https://api.allorigins.win/raw?url=';
+            const targetUrl = 'http://www.filmsactu.com/cine.rss';
+
+            fetch(proxyUrl + encodeURIComponent(targetUrl))
+                .then(response => response.text())
+                .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+                .then(data => {
+                    const items = data.querySelectorAll("item");
+                    let html = "";
+
+                    items.forEach(el => {
+                        let title = el.querySelector("title").textContent;
+                        let description = el.querySelector("description").textContent;
+                        let link = el.querySelector("link").textContent;
+
+                        html += `
+                        <div class='news-item'>
+                            <h3><a href='${link}'>${title}</a></h3>
+                            <p>${description}</p>
+                        </div>`;
+                    });
+
+                    document.getElementById('rssFeed').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching the RSS feed:', error));
+
+        }
+
+        loadRSSFilmsActus()
+
+
+        // Votre clé d'API pour The Movie Database
+        const apiKey = '180d5cd79b870d253ba626daa71ca03b'; // Remplacez par votre clé d'API
+
+        // URL de base pour les requêtes à l'API
+        const baseUrl = 'https://api.themoviedb.org/3';
+
+        // Fonction pour obtenir le nombre total de films
+        function getTotalMovies() {
+            // Utiliser un endpoint qui peut donner une indication sur le nombre total de films
+            const url = `${baseUrl}/movie/popular?api_key=${apiKey}&language=fr-FR&page=1`;
+
+            // Faire la requête à l'API
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    // Calculer le nombre total de films basé sur le nombre de pages et le nombre de films par page
+                    const totalMovies = data.total_results; // Ceci est une estimation
+                    updateHtmlField(totalMovies);
+                })
+                .catch(error => console.error('Erreur lors de la récupération des données:', error));
+        }
+
+        // Fonction pour mettre à jour le champ HTML avec le nombre total de films
+        function updateHtmlField(totalMovies) {
+            // Sélectionner le champ HTML où vous voulez afficher le nombre total de films
+            const movieField = document.getElementById('movie-count'); // Assurez-vous que cet ID correspond à votre champ HTML
+            movieField.innerText = `${totalMovies}`;
+        }
+
+        // Fonction pour récupérer le flux RSS
+        function loadRSSFeed() {
+            fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.allocine.fr/rss/news-cine.xml'))
+                .then(response => {
+                    if (response.ok) return response.json();
+                    throw new Error('Network response was not ok.');
+                })
+                .then(data => {
+                    let parser = new DOMParser();
+                    let xmlDoc = parser.parseFromString(data.contents, "text/xml");
+                    let items = xmlDoc.getElementsByTagName('item');
+                    let html = "";
+
+                    for (let item of items) {
+                        let title = item.getElementsByTagName('title')[0].textContent;
+                        let link = item.getElementsByTagName('link')[0].textContent;
+                        let description = item.getElementsByTagName('description')[0].textContent;
+
+                        html += `
+                        <div class='news-item'>
+                            <h3><a href='${link}'>${title}</a></h3>
+                            <p>${description}</p>
+                        </div>`;
+                    }
+
+                    document.getElementById('rss-feed').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                });
+        }
+
+        // Appel de la fonction pour obtenir et afficher le nombre total de films
+        getTotalMovies();
+        loadRSSFeed();
+
+
+
+        async function fetchPopularMovies(apiKey) {
+            const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-FR`;
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                return data.results;
+            } catch (error) {
+                console.error('Erreur lors de la récupération des données:', error);
+                return [];
+            }
+        }
+
+        function createTableRow(movie) {
+            return `
+            <tr>
+                <td class="text-center">
+                    <img width="40" src="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}">
+                </td>
+                <td class="text-center"><strong>${movie.title}</strong><br>${movie.release_date}</td>
+                <td class="text-center">
+                    <div class="badge badge-success">${movie.popularity}</div>
+                </td>
+            </tr>
+        `;
+        }
+
+        async function displayPopularMovies(apiKey) {
+            const movies = await fetchPopularMovies(apiKey);
+            const tableBody = document.getElementById('movies-table-body');
+
+            // Vider le tableau avant de le remplir à nouveau
+            tableBody.innerHTML = '';
+
+            movies.forEach(movie => {
+                tableBody.innerHTML += createTableRow(movie);
+            });
+        }
+
+        // Remplacez 'VOTRE_CLE_API' par votre clé d'API de TMDb
+        displayPopularMovies('180d5cd79b870d253ba626daa71ca03b');
+
+
+
+        async function fetchPopularMovies(apiKey) {
+            const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`;
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                return data.results.slice(0, 10); // Prendre les 10 premiers films
+            } catch (error) {
+                console.error('Erreur lors de la récupération des données:', error);
+                return [];
+            }
+        }
+
+        function createChart(data) {
+            const ctx = document.getElementById('myChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: data.map(movie => movie.title),
+                    datasets: [{
+                        label: 'Popularité',
+                        data: data.map(movie => movie.popularity),
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        async function displayPopularMoviesChart(apiKey) {
+            const movies = await fetchPopularMovies(apiKey);
+            createChart(movies);
+        }
+
+
+        // Remplacez 'VOTRE_CLE_API' par votre clé d'API de TMDb
+        displayPopularMoviesChart('180d5cd79b870d253ba626daa71ca03b');
+
+
+
+
+        async function fetchLatestMovie(apiKey) {
+            const url = `https://api.themoviedb.org/3/movie/latest?api_key=${apiKey}&language=fr-FR`;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error('Erreur de réponse du réseau');
+                }
+                const movie = await response.json();
+                return movie;
+            } catch (error) {
+                console.error('Erreur lors de la récupération du dernier film:', error);
+            }
+        }
+
+        function displayLatestMovie(movie) {
+            const container = document.getElementById('latest-movie-container');
+            if (!container) {
+                console.error('Conteneur du dernier film non trouvé');
+                return;
+            }
+
+            container.innerHTML = movie.title;
+        }
+
+        // Remplacez 'VOTRE_CLE_API' par votre clé d'API de TMDb
+        fetchLatestMovie('180d5cd79b870d253ba626daa71ca03b').then(movie => {
+            if (movie) {
+                displayLatestMovie(movie);
+            }
+        });
+
+        let secondsSinceLoad = 0;
+        let secondsToRefresh = 600;
+        const counterPassed = document.getElementById('counter-passed');
+        const counterRemain = document.getElementById('counter-remain');
+
+        // Mettre à jour le compteur chaque seconde
+        const intervalId = setInterval(() => {
+            secondsSinceLoad++;
+            secondsToRefresh--;
+            counterPassed.textContent = secondsSinceLoad;
+            counterRemain.textContent = -secondsToRefresh;
+        }, 1000);
+
+        // Rafraîchir la page après 10 secondes
+        setTimeout(() => {
+            clearInterval(intervalId); // Arrêter le compteur avant de rafraîchir
+            location.reload();
+        }, secondsToRefresh * 1000);
+
+    </script>
+</body>
+
+</html>
